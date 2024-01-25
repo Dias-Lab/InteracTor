@@ -2237,6 +2237,8 @@ def calculate_proportion(seq):
     mapVolume['V'] = 140.0
     mapVolume['O'] = 2 * 166.7
     mapVolume['U'] = 108.5 # The same value that C
+    mapVolume['B'] = 111.1
+    mapVolume['Z'] = 138.4
 
     mapMass['A'] = 89.0
     mapMass['R'] = 174.0
@@ -2260,6 +2262,8 @@ def calculate_proportion(seq):
     mapMass['V'] = 117.0
     mapMass['O'] = 237.14773
     mapMass['U'] = 150.95364
+    mapMass['B'] = 133.0
+    mapMass['Z'] = 147.0
 
     mapHydro['A'] = 1.8
     mapHydro['R'] = -4.5
@@ -2283,6 +2287,8 @@ def calculate_proportion(seq):
     mapHydro['V'] = 4.2 
     mapHydro['O'] = 2 * 3.8
     mapHydro['U'] = 2.5 # The same value that C
+    mapHydro['B'] = -3.5
+    mapHydro['Z'] = -3.5
     
     length = len(seq)
     
@@ -2304,7 +2310,7 @@ def calculate_proportion(seq):
             Polar_Uncharged +=1
         elif ( 'K' in aa or 'H'  in aa or 'R'  in aa ):
             Positively_Charged +=1
-        elif ( 'D' in aa or  'E' in aa):
+        elif ( 'D' in aa or  'E' in aa or 'B' in aa or 'Z' in aa):
             Negatively_Charged +=1
         else:
             print ('')
@@ -2358,7 +2364,7 @@ Fixed: 01/11/24
 # https://www.sciencefriday.com/wp-content/uploads/2018/07/amino-acid-abbreviation-chart.pdf
 # https://en.wikipedia.org/wiki/Amino_acid
 
-# Non-proteinogenic amino acids
+# Non-proteinogenic and proteinogenic amino acids
 pyrrolysine:    PYL:O
 selenocysteine: SEC:U
 Glutamic acid or glutamine: GLX:Z
@@ -2401,7 +2407,7 @@ def main():
     # ****************************************************************************************************** #
     global AA
     AA = ["A", "R", "N", "D", "C", "E", "Q", "G", "H", "I",
-          "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V","O","U"]
+          "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V","O","U","B","Z","X"]
 
     global AADipeptide
     AADipeptide = {}
@@ -2459,7 +2465,7 @@ def main():
     
     calcula_RT(protein_ligand)
     
-    aux,key_ = result_score_calc('examples/protein.pdb','examples/protein.mol2',feat,seqaa,hydrogen_B)
+    aux,key_ = result_score_calc('protein.pdb','protein.mol2',feat,seqaa,hydrogen_B)
 
     finaloutput = open("1_Reults.interaction_terms.txt","w")
     finaloutput.write('\t'.join(key_))

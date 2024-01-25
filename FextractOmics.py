@@ -2430,8 +2430,8 @@ def main():
 
     # 1) processa entreadas
     # [JC] Open PDF file
-    atoms,seqaa = open_protein('examples/protein.pdb')   
-    protein_ligand,protein_bond,protein_tripos = open_protein_ligand('examples/protein.mol2')
+    atoms,seqaa = open_protein('protein.pdb')   
+    protein_ligand,protein_bond,protein_tripos = open_protein_ligand('protein.mol2')
 
     #2.1 [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)
     # Protein-protein distance

@@ -4,29 +4,37 @@
 # In[1]:
 
 
-def open_protein(pdb_file):
-    pdb_file = open(pdb_file,'r')
-    atoms = list()
-    seqaux = list()
-    seq = ''
-    table = {
-        'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C',
-        'GLU': 'E', 'GLN': 'Q', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
-        'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P',
-        'SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
-        'PYL':'O','SEC':'U','GLX':'Z','XAA':'X','ASX':'B' 
-    }    
-    for l in pdb_file:
-        l = ' '.join(l.split())
-        if l.startswith('ATOM'):
-            atoms.append (l.strip().split(' ')[1::])
-        elif l.startswith('SEQRES'):
-            seqaux.append(l.strip().split(' ')[4::])
-    for aa in seqaux:
-        for a in aa:
-            seq += table[str(a)]
-        
-    return atoms,seq
+def open_protein(pdb_file,table):
+    with open(pdb_file, 'r') as file:
+        atoms = []
+        seqaux = []
+        seq = ''
+
+        for line in file:
+            if line.startswith('ATOM'):
+                atom = [
+                    line[6:11].strip(),    # Atom serial number
+                    line[12:16].strip(),   # Atom name
+                    line[17:20].strip(),   # Residue name
+                    line[21].strip(),      # Chain identifier
+                    line[22:26].strip(),   # Residue sequence number
+                    line[30:38].strip(),   # X coordinate
+                    line[38:46].strip(),   # Y coordinate
+                    line[46:54].strip(),   # Z coordinate
+                    line[76:78].strip()    # Element symbol
+                ]
+                atoms.append(atom)
+            elif line.startswith('SEQRES'):
+                seqaux.extend(line[19:].split())
+
+        for aa in seqaux:
+            if aa in table:
+                seq += table[aa]
+            else:
+                print(f"Skipping unrecognized amino acid: {aa}")
+ 
+
+        return atoms, seq
 
 
 # In[2]:
@@ -42,7 +50,9 @@ def open_protein_ligand(mol2_file):
         if l.startswith('@<TRIPOS>ATOM'):
             count += 1
         if l.startswith('@<TRIPOS>BOND'):
-            count += 1 
+            count += 1
+        if l.startswith('@<TRIPOS>UNITY_ATOM_ATTR'):
+            continue 
         if len(l) > 20 and count==1:
             l = ' '.join(l.split())
             protein_atom.append (l.strip().split(' '))
@@ -71,7 +81,6 @@ def PP_Distance(protein,protein_ligand):
     VDW_total = 0.0
     repulsive = 0
     london = 0.0
-    RT = 0.0
     surface_tension = 0.0
     hydrophobicity = 0.0
     HC_allowed_1 = 0.0
@@ -365,7 +374,7 @@ def PP_Distance(protein,protein_ligand):
                     n = 0
             j+=1
         i+=1
-    aux = [HC_total2, VDW_total, RT, repulsive, london]
+    aux = [HC_total2, VDW_total, 0.0, repulsive, london]
     return ('PP_DIST.tmp',aux)
 
 
@@ -736,7 +745,7 @@ def P_centro_geom():
                         if -99.9999 <= gcz2 <= 999.9999:
                             letrasz = gcz2
                         if -999.9999 <= gcz2 <= -100.0000:
-                            letrasz = gcz
+                            letrasz = gcz2
 
                         p_root_f.write("R geom_center(2) " +" "+ str(letrasx) +" "+ str(letrasy) +" "+ str(letrasz) +" "+ "\n")
                         conta_r = 0
@@ -764,7 +773,7 @@ def P_centro_geom():
                         if -99.9999 <= gcz3 <= 999.9999:
                             letrasz = gcz3
                         if -999.9999 <= gcz3 <= -100.0000:
-                            letrasz = gcz
+                            letrasz = gcz3
 
 
                         p_root_f.write("R geom_center(3) " +" "+ str(letrasx) +" "+ str(letrasy) +" "+ str(letrasz) +" "+ "\n")
@@ -1472,11 +1481,11 @@ def raiz_ligante(protein_bond,protein_tripos):
             if bl[1] in PL_DIST:
                 out.write('R ' + str(' '.join(protein_tripos[bl[2]]) + '\n'))
                 out.write('B ' + str(' '.join(PL_DIST[bl[1]]) + '\n'))
-                outlt.write(str(protein_tripos[bl[2]][5]) + '\n')
+                outlt.write(str(protein_tripos[bl[2]][0]) + '\n')
             if bl[2] in PL_DIST:
                 out.write('R ' + str(' '.join(protein_tripos[bl[1]]) + '\n'))
                 out.write('B ' + str(' '.join(PL_DIST[bl[2]]) + '\n'))
-                outlt.write(str(protein_tripos[bl[2]][5]) + '\n')
+                outlt.write(str(protein_tripos[bl[2]][0]) + '\n')
     out.close()
     outlt.close()
 
@@ -1577,7 +1586,7 @@ def saida_PDB(protein):
             px = p_line[5]
             py = p_line[6]
             pz = p_line[7]
-            p_enter = p_line[10]
+            p_enter = p_line[8]
 
             num_p_num_aminoacido = int(p_num_aminoacido)
             num_p_atomo = int(p_atomo)
@@ -1641,7 +1650,7 @@ def salva_proteina():
     p_result3.close()
 
 
-# In[11]:
+# In[23]:
 
 
 def calcula_RT(ligand):
@@ -1659,9 +1668,6 @@ def calcula_RT(ligand):
         rt_string = []
         for line in RT_found:
             rt_string.append(line.strip())
-
-    lines_total2 = -1
-    lines_total2 -= 1
 
     limit_type.close()
     
@@ -1736,31 +1742,35 @@ def calcula_RT(ligand):
     number_count = 0
     pair = 0
     next = 0
+    s_bond = 0
+    RT = 0.0
+    # Verificar limit_type.tmp file
     while current_line_0 < lines_total2:
         if marker < line_count and current_line_0 < lines_total2:
             while marker < line_count:
                 number_count += 1
                 next = marker + 1
-                if rt_string[current_line_0] == atom_1[marker][:6]:
+
+                if rt_string[current_line_0] == atom_1[marker]:
                     atom_count += 1
-                    if atom_1[next][5] == '1':
-                        atom1 = atom_1[marker][:6]
+                    if atom_1[next][0] == '1':
+                        atom1 = atom_1[marker]
                         num_atom1 = int(atom1)
-                        if mol2_type[num_atom1][9] == '2':
+                        if mol2_type[num_atom1][0] == '2':
                             sp2_count += 1
                         if number_count % 2 != 0:
                             pair = 2
                         if number_count % 2 == 0:
                             pair = -2
-                        atom2 = atom_1[marker + pair][:6]
+                        atom2 = atom_1[marker + pair]
                         num_atom2 = int(atom2)
-                        if mol2_type[num_atom2][9] == '2':
+                        if mol2_type[num_atom2][0] == '2':
                             sp2_count += 1
                         if sp2_count < 2 and mol2_type[num_atom2][7] != 'H' and mol2_type[num_atom1][7] != 'H':
                             s_bond += 1
                 marker += 2
         marker = 0
-
+        
         if atom_count > 1:
             if s_bond == 0:
                 RT += 0
@@ -1774,6 +1784,8 @@ def calcula_RT(ligand):
         sp2_count = 0
         atom_count = 0
         current_line_0 +=1
+        
+    return RT
 
 
 # In[12]:
@@ -1844,30 +1856,26 @@ def limit():
     #    p_function()
     
     p_root.close()
-    l_list = open("limit_l.tmp", "r")
     l_TOTAL = 0
-    ch2 = [''] * 17
-
-    for line in l_list:
-        # BLK N.am 12
-        ch2 = line.split('\0')[0]
-        #if ch2[15] == '\n':
-        l_TOTAL += 1
-
-    l_list.close()
     l_list = open("limit_l.tmp", "r")
-    ch_l = [[''] * 17 for _ in range(l_TOTAL)]
-
-    line_l = 0
     for line in l_list:
-        ch2 = line.strip().split(' ')[0]
-        ch_l[line_l] = ch2
+        l_TOTAL += 1
+        # BLK N.am 12
+        
+    l_list.close()
+    
+    l_list = open("limit_l.tmp", "r")
+    ch_l = [[''] * 17 for _ in range(l_TOTAL)]    
+    line_l = 0
+    
+    for line in l_list:
+        ch_l[line_l] = line.strip().split(' ')[1]
         line_l += 1
 
-    line_l = 0
     line_l_count = 0  # a linha que esta sendo comparada com as outras
 
     l_list.close()
+    
     l_root = open("L_ROOT_0.tmp")
     l_file_line = 0
     l_liged = 0
@@ -1879,7 +1887,6 @@ def limit():
     #while not l_root.eof() and (l_file_line - 1) < line_l_count:
     for lr in l_root:
         l_root_line = lr.strip().split()
-        # print(l_root_line + "*")
         if l_root_line[0] == 'R' and l_root_line[6] != 'H' and l_root_line[6] != 'h':
         #if l_root_line[0] == 'R':
             l_liged += 1
@@ -1919,6 +1926,7 @@ def limit():
     refined = 0
     while line_p_count < p_TOTAL:
         liged = int(p_liged_list[line_p_count])
+        """
         if ch_p[line_p_count][0] == 'C':
             MAX = MAX_C - liged  # cout << endl << "C" << endl;
         if ch_p[line_p_count][0] == 'N':
@@ -1928,7 +1936,20 @@ def limit():
         if ch_p[line_p_count][0] == 'O':
             MAX = MAX_O - liged  # cout << endl << "O" << endl;
         if ch_p[line_p_count][0] == 'S':
+            MAX = MAX_S - liged  # cout << endl << "S" << endl;"""
+
+        liged = int(p_liged_list[line_p_count])
+        if ch_p[line_p_count][0].startswith('C'):
+            MAX = MAX_C - liged  # cout << endl << "C" << endl;
+        if ch_p[line_p_count][0].startswith('N'):
+            MAX = MAX_N - liged  # cout << endl << "N" << endl;
+        if ch_p[line_p_count][0].startswith('P'):
+            MAX = MAX_P - liged  # cout << endl << "P" << endl;
+        if ch_p[line_p_count][0].startswith('O'):
+            MAX = MAX_O - liged  # cout << endl << "O" << endl;
+        if ch_p[line_p_count][0].startswith('S'):
             MAX = MAX_S - liged  # cout << endl << "S" << endl;
+            
         while string_line_count < p_TOTAL:
             if (
                 ch_p[line_p_count][12] != 'X'
@@ -1960,42 +1981,52 @@ def limit():
     # ------refinamento ligante-------------------------------------------------------
     # ------------------------------------------------------------------
     MAX = 0
-
-    #while line_l_count < l_TOTAL:
+    
     for line_l_count in l_liged_list:
         liged = l_liged_list[line_l_count]
-        if ch_l[line_l_count] == 'C':
-            MAX = MAX_C - liged  # cout << endl << "C" << endl;
-        if ch_l[line_l_count] == 'N':
-            MAX = MAX_N - liged  # cout << endl << "N" << endl;
-        if ch_l[line_l_count] == 'P':
-            MAX = MAX_P - liged  # cout << endl << "P" << endl;
-        if ch_l[line_l_count] == 'O':
-            MAX = MAX_O - liged  # cout << endl << "O" << endl;
-        if ch_l[line_l_count] == 'S':
-            MAX = MAX_S - liged  # cout << endl << "S" << endl;
+
+        try:
+            if ch_l[line_l_count].startswith('C'):
+                MAX = MAX_C - liged  # cout << endl << "C" << endl;
+            if ch_l[line_l_count].startswith('N'):
+                MAX = MAX_N - liged  # cout << endl << "N" << endl;
+            if ch_l[line_l_count].startswith('P'):
+                MAX = MAX_P - liged  # cout << endl << "P" << endl;
+            if ch_l[line_l_count].startswith('O'):
+                MAX = MAX_O - liged  # cout << endl << "O" << endl;
+            if ch_l[line_l_count].startswith('S'):
+                MAX = MAX_S - liged  # cout << endl << "S" << endl;
+        except:
+            print ( f"l_liged_list: {len(l_liged_list)} ch_l: {len(ch_l)}" )
+            
         for l in limit_type:
             atom = l.strip()
             type = l.strip()
+            # print (f"----------")
+            # print (f"Type: {type}")
+            # print (f"atom: {atom}")
+            # print (f"ch_l: {ch_l[line_l_count]}")
+            # print (f"----------")
             # cout << type << "*" << endl;
-            if (
-                type == '2'
-                and atom[1] == ch_l[line_l_count]
-
-            ):
-                MAX -= 1
+            try:
+                if ( type == '2' and atom[1] == ch_l[line_l_count] ):
+                    MAX -= 1
+            except:
+                MAX -= 0
 
         limit_type.seek(0)  # move to the start of the file
+        string_line_count = 0
+
         while string_line_count < l_TOTAL:
-            if (
-                ch_l[line_l_count] != 'X'
-                and ch_l[line_l_count] == ch_l[string_line_count]):
-                found += 1  # encontrou um atomo igual ao da string selecionada
+            if line_l_count < l_TOTAL:
+                if (ch_l[line_l_count] != 'X' and ch_l[line_l_count] == ch_l[string_line_count]):
+                        found += 1  # encontrou um atomo igual ao da string selecionada
                 if found > MAX:
-                    ch_p[string_line_count] = 'X'  # marca este atomo para excluir da procura
-                    ch_l[string_line_count] = 'X'
-                    dist_line[string_line_count] = 'X'
+                            ch_p[string_line_count] = 'X'  # marca este atomo para excluir da procura
+                            ch_l[string_line_count] = 'X'
+                            dist_line[string_line_count] = 'X'
             string_line_count += 1
+
         # cout << endl << "F" << found << "*" << ch_l[line_l_count][9] << endl;
         string_line_count = 0  # reseta as linhas que vao serem comparadas com a selecionada
         found = 0  # reseta numero de encontrados
@@ -2016,7 +2047,8 @@ def limit():
 # In[13]:
 
 
-def result_score_calc(protein_name,ligand_pdb,aux,seqaa,hydrogen_B):
+def result_score_calc(protein_name,ligand_pdb,aux,seqaa,hydrogen_B,aa_table):
+
     import os
     import subprocess
     HC_total2 = aux[0]
@@ -2071,15 +2103,12 @@ def result_score_calc(protein_name,ligand_pdb,aux,seqaa,hydrogen_B):
     total_surface_tension = 0
     contact_hydrophobicity = 0
     contact_surface_tension = 0
-    #surface_tension = surface_tension
+    for a in seqaa:
+        total_hydrophobicity += hydro_map[aa_table[a]]
+        total_surface_tension += tension_map[aa_table[a]]
 
-    hydrophobicity = 0
-    surface_tension = 0
-    hydrophobicity,surface_tension = surface_tension_hydrophobicity_calculator(hydro_map, tension_map, p_dist_file_name)
-
-    contact_hydrophobicity = hydrophobicity
-    contact_surface_tension = surface_tension
-    
+    contact_hydrophobicity,contact_surface_tension = surface_tension_hydrophobicity_calculator(hydro_map, tension_map, p_dist_file_name)
+   
     # New features
     r1 = calculate_proportion(seqaa)
     r2 = CalculateAAComposition(seqaa)
@@ -2115,6 +2144,10 @@ def result_score_calc(protein_name,ligand_pdb,aux,seqaa,hydrogen_B):
     for f in r4:
         key_.append(f)
         res.append(r4[f])
+
+    f = open('features.txt','w')
+    f.write('\t'.join(map(str, key_)))
+    f.close()
     
     return res,key_
 
@@ -2158,16 +2191,13 @@ def surface_tension_hydrophobicity_calculator(hydro_map, tension_map, infile_nam
 
     with open(infile_name, 'r') as infile:
         for p_dist_line in infile:
-            v = p_dist_line.strip().split(' ')
-            exists = v[4] in aa_numbers
 
-            aa_numbers.append(v[4])
-            counter += 1
+            v = p_dist_line.strip().split(' ')[2]
+            if hydro_map[v]:
+                hydrophobicity += hydro_map[v]
+            if tension_map[v]:
+                surface_tension += tension_map[v]
 
-            if not exists:
-                hydrophobicity += hydro_map.get(v[2], 0)
-                surface_tension += tension_map.get(v[2], 0)
-    
     return hydrophobicity, surface_tension
 
 
@@ -2239,6 +2269,7 @@ def calculate_proportion(seq):
     mapVolume['U'] = 108.5 # The same value that C
     mapVolume['B'] = 111.1
     mapVolume['Z'] = 138.4
+    mapVolume['J'] = 162.9
 
     mapMass['A'] = 89.0
     mapMass['R'] = 174.0
@@ -2264,6 +2295,7 @@ def calculate_proportion(seq):
     mapMass['U'] = 150.95364
     mapMass['B'] = 133.0
     mapMass['Z'] = 147.0
+    mapMass['J'] = 196.106
 
     mapHydro['A'] = 1.8
     mapHydro['R'] = -4.5
@@ -2289,6 +2321,7 @@ def calculate_proportion(seq):
     mapHydro['U'] = 2.5 # The same value that C
     mapHydro['B'] = -3.5
     mapHydro['Z'] = -3.5
+    mapHydro['J'] = 1.9
     
     length = len(seq)
     
@@ -2302,7 +2335,7 @@ def calculate_proportion(seq):
     hydro = 0.0
 
     for aa in seq:
-        if ( 'G' in aa or 'A' in aa  or 'P'  in aa  or 'V'  in aa  or 'L'  in aa  or 'I'  in aa or 'M'  in aa or 'O'  in aa):
+        if ( 'G' in aa or 'A' in aa  or 'P'  in aa  or 'V'  in aa  or 'L'  in aa  or 'I'  in aa or 'M'  in aa or 'O'  in aa or 'J'  in aa):
             Nonpolar_Aliphatic += 1
         elif ( 'F'  in aa or 'Y' in aa or 'W'  in aa ):
             Aromatic += 1
@@ -2345,12 +2378,33 @@ def calculate_proportion(seq):
 # In[21]:
 
 
+def deleta_temp():
+    import os
+    os.remove("dist_result.tmp")
+    os.remove("limit_l.tmp")
+    os.remove("limit_p.tmp")
+    os.remove("limit_type.tmp")
+    os.remove("l_result.tmp")
+    os.remove("L_ROOT_0.tmp")
+    os.remove("L_ROOT.tmp")
+    os.remove("PL_DIST.tmp")
+    os.remove("PP_DIST.tmp")
+    os.remove("p_result.tmp")
+    os.remove("P_ROOT_0.tmp")
+    os.remove("P_ROOT.tmp")
+    os.remove("RT_found.tmp")    
+
+
+# In[22]:
+
+
 import sys
 
 """
 First version.
 Author: Jose Cleydson F Silva
 Date: 09/29/2323
+Convert: jupyter nbconvert --to script  FextractOmics.ipynb
 *******************************************************************************************************************************************
 New Version;
 12/18/2023 - New features and Hidrogen_B feature.
@@ -2372,6 +2426,7 @@ Unknown: XAA:X
 Aspartic acid or Asparagine ASX:B
 Fixed: 01/19/24
 """
+
 # def main(argv):
 def main():
     global hydrogen_B
@@ -2382,7 +2437,6 @@ def main():
     global VDW_total
     global repulsive
     global london
-    global RT
     global surface_tension
     global hydrophobicity
     global ligand_name
@@ -2406,8 +2460,7 @@ def main():
 
     # ****************************************************************************************************** #
     global AA
-    AA = ["A", "R", "N", "D", "C", "E", "Q", "G", "H", "I",
-          "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V","O","U","B","Z","X"]
+    AA = ["A", "R", "N", "D", "C", "E", "Q", "G", "H", "I","L", "K", "M", "F", "P", "S", "T", "W", "Y", "V","O","U","B","Z","X","J"]
 
     global AADipeptide
     AADipeptide = {}
@@ -2427,54 +2480,88 @@ def main():
                 AATripeptide[kmer] = int(0)
     #if len(argv) < 4:
     #    sys.exit(1)
+    table = {
+            'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C','GLU': 'E', 'GLN': 'Q', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
+            'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P','SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
+            'PYL': 'O', 'SEC': 'U','GLX':'Z','XAA':'X','ASX':'B','MSE':'J'}
 
-    # 1) processa entreadas
-    # [JC] Open PDF file
-    atoms,seqaa = open_protein('examples/protein.pdb')   
-    protein_ligand,protein_bond,protein_tripos = open_protein_ligand('examples/protein.mol2')
+    aa_table = {}
 
-    #2.1 [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)
-    # Protein-protein distance
-    file1,feat = PP_Distance(atoms,protein_ligand)
-    raiz_proteina(file1,atoms)
+    for t in table:
+        aa_table[table[t]] = t
     
-    # Utiliza a sessao bonds do mol2 e o L_DIST.tmp (PL_DIST.tmp) pra extrair as raizes de apenas atomos que estao listados no PL_DIST.tmp
-    raiz_ligante(protein_bond,protein_tripos)
+    import os
+    import sys
+    dir_ = './data_bkp/'
+    pdbfiles = list()
+    for file in os.listdir(dir_):
+        if file.endswith(".pdb"):
+            pdbfiles.append(os.path.join(dir_, file))
 
-    # 2) Calculos
-    # 2.1 [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)	
-    P_centro_geom()
-    
-    #input eh o L_ROOT_0.tmp gerado pelo raiz_ligante, e vai gerar L_ROOT.tmp
-    L_centro_geom()
-    
-    #input dos angulos: outputs dos P/L_centro_geom()
-    hydrogen_B = angulos()
-    
-    """
-    # 3) Saida
-    ---> remove ---> salva_ligante()#####
-    """
-    saida_PDB(atoms) 
-    salva_proteina()
-    
-    # 4) refinamento do HB
-    #result_score_calc
-    if hydrogen_B != 0:
-        limit()
-    
-    calcula_RT(protein_ligand)
-    
-    aux,key_ = result_score_calc('protein.pdb','protein.mol2',feat,seqaa,hydrogen_B)
+    f = open('features.txt','r')
+    key_ = list()
+    for l in f:
+        key_ = l.split('\t')
 
-    finaloutput = open("1_Reults.interaction_terms.txt","w")
-    finaloutput.write('\t'.join(key_))
+    finaloutput = open("1_Reults.interaction_terms.csv","w")
+    finaloutput.write(f"pdb\t"+'\t'.join(key_))
     finaloutput.write('\n')
-    finaloutput.write('\t'.join(map(str, aux)))
+    
+    for pdb in pdbfiles:
+        print (f"Processing {pdb}")
+        # 1) processa entreadas
+        # [JC] Open PDF file
+        atoms,seqaa = open_protein(pdb,table)
+
+        protein_ligand,protein_bond,protein_tripos = open_protein_ligand(pdb.replace('pdb','mol2'))
+    
+        #print (f"2.1 PP_Distance: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
+        # Protein-protein distance
+        file1,feat = PP_Distance(atoms,protein_ligand)
+        raiz_proteina(file1,atoms)
+        
+        # "Utiliza a sessao bonds do mol2 e o L_DIST.tmp (PL_DIST.tmp) pra extrair as raizes de apenas atomos que estao listados no PL_DIST.tmp
+        raiz_ligante(protein_bond,protein_tripos)
+    
+        #print (f"2 Calculos")
+        #print (f"2.1 P_centro_geom: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
+        P_centro_geom()
+        
+        #input eh o L_ROOT_0.tmp gerado pelo raiz_ligante, e vai gerar L_ROOT.tmp
+        L_centro_geom()
+        
+        #print (f"input dos angulos: outputs dos P/L_centro_geom()")
+        hydrogen_B = angulos()
+        
+        """
+        # 3) Saida
+        ---> remove ---> salva_ligante() #####
+        """
+        saida_PDB(atoms) 
+        salva_proteina()
+        
+        #print (f"4) refinamento do HB")
+        #result_score_calc
+        if hydrogen_B != 0:
+            limit()
+        
+        feat[2] = calcula_RT(protein_ligand)
+        #print (feat[2])
+        #print (f"Calculating scores")
+        aux,key_ = result_score_calc(pdb,pdb.replace('pdb','mol2'),feat,seqaa,hydrogen_B,aa_table)
+
+        #print (f"Saving results")
+        finaloutput.write(f"{pdb}\t" + '\t'.join(map(str, aux)) + '\n')
+
+        #print (f"Removing temp files")
+        deleta_temp()
+        
+        import time
+        time.sleep(0.3)
     finaloutput.close()
     
     """
-    deleta_temp()
+    
     # system("pause")
     """
     

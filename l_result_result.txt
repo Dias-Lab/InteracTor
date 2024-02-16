@@ -1,0 +1,1602 @@
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0.0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0.0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0.0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0.0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0.0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0.0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        195564.41625333336
+Van der waals:               16425.10570976812
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1730
+Repulsive VDW score:         6900
+London dispersion force:     266688.5485170614
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        140087.39786466688
+Van der waals:               11571.87584748126
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1136
+Repulsive VDW score:         4871
+London dispersion force:     164927.81200478453
+Hydrophobic contacts:        638467.883692662
+Van der waals:               13734.115831902784
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2108
+Repulsive VDW score:         14659
+London dispersion force:     943571.1185124055
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0.0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0.0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0.0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0.0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        0.0
+Van der waals:               0.0
+Deformation effect:          0.0
+Hydrogen bonds (HB):         0
+Repulsive VDW score:         0
+London dispersion force:     0.0
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0.0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0.0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        195564.41625333336
+Van der waals:               16425.10570976812
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1730
+Repulsive VDW score:         6900
+London dispersion force:     266688.5485170614
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0.0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0.0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0.0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0.0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0.0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0.0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        195564.41625333336
+Van der waals:               16425.10570976812
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1730
+Repulsive VDW score:         6900
+London dispersion force:     266688.5485170614
+Hydrophobic contacts:        397755.60152467137
+Van der waals:               26832.40338281523
+Deformation effect:          0.0
+Hydrogen bonds (HB):         3252
+Repulsive VDW score:         13963
+London dispersion force:     882985.1924828185
+Hydrophobic contacts:        207045.2097999978
+Van der waals:               19914.19340413733
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1450
+Repulsive VDW score:         7156
+London dispersion force:     304980.17357068
+Hydrophobic contacts:        73699.3586533332
+Van der waals:               -14597.234107893488
+Deformation effect:          0.0
+Hydrogen bonds (HB):         492
+Repulsive VDW score:         1485
+London dispersion force:     99332.87790610336
+Hydrophobic contacts:        169181.41365999938
+Van der waals:               16976.386482164547
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1706
+Repulsive VDW score:         6316
+London dispersion force:     221166.7404218177
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        195564.41625333336
+Van der waals:               16425.10570976812
+Deformation effect:          0
+Hydrogen bonds (HB):         1730
+Repulsive VDW score:         6900
+London dispersion force:     266688.5485170614
+Hydrophobic contacts:        397755.60152467137
+Van der waals:               26832.40338281523
+Deformation effect:          0
+Hydrogen bonds (HB):         3252
+Repulsive VDW score:         13963
+London dispersion force:     882985.1924828185
+Hydrophobic contacts:        207045.2097999978
+Van der waals:               19914.19340413733
+Deformation effect:          0
+Hydrogen bonds (HB):         1450
+Repulsive VDW score:         7156
+London dispersion force:     304980.17357068
+Hydrophobic contacts:        73699.3586533332
+Van der waals:               -14597.234107893488
+Deformation effect:          0
+Hydrogen bonds (HB):         492
+Repulsive VDW score:         1485
+London dispersion force:     99332.87790610336
+Hydrophobic contacts:        169181.41365999938
+Van der waals:               16976.386482164547
+Deformation effect:          0
+Hydrogen bonds (HB):         1706
+Repulsive VDW score:         6316
+London dispersion force:     221166.7404218177
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0.0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0.0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0.0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0.0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0.0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0.0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        44942.602648000066
+Van der waals:               6027.492899499564
+Deformation effect:          0.0
+Hydrogen bonds (HB):         284
+Repulsive VDW score:         1631
+London dispersion force:     28209.437811668788
+Hydrophobic contacts:        38879.654939333224
+Van der waals:               4670.713029111388
+Deformation effect:          0.0
+Hydrogen bonds (HB):         294
+Repulsive VDW score:         1349
+London dispersion force:     22843.570853201374
+Hydrophobic contacts:        270741.4374279988
+Van der waals:               -17313.777022714294
+Deformation effect:          0.0
+Hydrogen bonds (HB):         446
+Repulsive VDW score:         4288
+London dispersion force:     436611.9988117026
+Hydrophobic contacts:        45386.84344466661
+Van der waals:               5419.89047312593
+Deformation effect:          0.0
+Hydrogen bonds (HB):         366
+Repulsive VDW score:         1610
+London dispersion force:     28302.24615592034
+Hydrophobic contacts:        122424.74365399995
+Van der waals:               13534.805575908855
+Deformation effect:          0.0
+Hydrogen bonds (HB):         928
+Repulsive VDW score:         4281
+London dispersion force:     124392.22917690327
+Hydrophobic contacts:        130671.78495933398
+Van der waals:               13359.668827239651
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1224
+Repulsive VDW score:         4716
+London dispersion force:     151814.8995168875
+Hydrophobic contacts:        48389.70379400019
+Van der waals:               3624.6911627385207
+Deformation effect:          0.0
+Hydrogen bonds (HB):         510
+Repulsive VDW score:         1677
+London dispersion force:     43222.149897944415
+Hydrophobic contacts:        173187.15682933398
+Van der waals:               9095.59445928847
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1146
+Repulsive VDW score:         5733
+London dispersion force:     230205.93919272182
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          0.0
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          0.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          0.0
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335
+Hydrophobic contacts:        242174.5507846674
+Van der waals:               8968.007542141602
+Deformation effect:          13.5
+Hydrogen bonds (HB):         1786
+Repulsive VDW score:         8343
+London dispersion force:     390898.66337721376
+Hydrophobic contacts:        113189.60918800024
+Van der waals:               -22823.595415746942
+Deformation effect:          5.0
+Hydrogen bonds (HB):         686
+Repulsive VDW score:         2305
+London dispersion force:     202485.34500838345
+Hydrophobic contacts:        263447.75778466725
+Van der waals:               11937.988354928046
+Deformation effect:          7.5
+Hydrogen bonds (HB):         2412
+Repulsive VDW score:         8971
+London dispersion force:     443980.73592891335

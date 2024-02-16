@@ -2485,7 +2485,14 @@ def main():
             'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P','SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
             'PYL': 'O', 'SEC': 'U','GLX':'Z','XAA':'X','ASX':'B','MSE':'J'}
 
+<<<<<<< HEAD
     aa_table = {}
+=======
+    # 1) processa entreadas
+    # [JC] Open PDF file
+    atoms,seqaa = open_protein('protein.pdb')   
+    protein_ligand,protein_bond,protein_tripos = open_protein_ligand('protein.mol2')
+>>>>>>> 40452a51703aa3bd485634af7cafaccdd2587b9b
 
     for t in table:
         aa_table[table[t]] = t

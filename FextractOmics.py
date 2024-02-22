@@ -9,6 +9,7 @@ def open_protein(pdb_file,table):
         atoms = []
         seqaux = []
         seq = ''
+        res = {}
         table = {
             'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C',
             'GLU': 'E', 'GLN': 'Q', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
@@ -19,6 +20,7 @@ def open_protein(pdb_file,table):
 
         for line in file:
             if line.startswith('ATOM'):
+                res[line[22:26]] = line[17:20]
                 atom = [
                     line[6:11].strip(),    # Atom serial number
                     line[12:16].strip(),   # Atom name
@@ -31,15 +33,12 @@ def open_protein(pdb_file,table):
                     line[76:78].strip()    # Element symbol
                 ]
                 atoms.append(atom)
-            elif line.startswith('SEQRES'):
-                seqaux.extend(line[19:].split())
 
-        for aa in seqaux:
-            if aa in table:
-                seq += table[aa]
+        for aa in sorted(res):
+            if res[aa] in table:
+                seq += table[res[aa]]
             else:
-                print(f"Skipping unrecognized amino acid: {aa}")
- 
+                print(f"Skipping unrecognized amino acid: {res[aa]}")
 
         return atoms, seq
 
@@ -1777,7 +1776,8 @@ def calcula_RT(ligand):
                             if sp2_count < 2 and mol2_type[num_atom2][7] != 'H' and mol2_type[num_atom1][7] != 'H':
                                 s_bond += 1
                     except:
-                        continue
+                        marker += 2
+                        break
                 marker += 2
         marker = 0
         
@@ -2502,7 +2502,8 @@ def main():
     
     import os
     import sys
-    dir_ = './data/'
+    #dir_ = './data/'
+    dir_ = sys.argv[1]
     pdbfiles = list()
     for file in os.listdir(dir_):
         if file.endswith(".pdb"):
@@ -2523,7 +2524,7 @@ def main():
         # [JC] Open PDF file
         atoms,seqaa = open_protein(pdb,table)
 
-        protein_ligand,protein_bond,protein_tripos = open_protein_ligand(pdb.replace('pdb','mol2'))
+        protein_ligand,protein_bond,protein_tripos = open_protein_ligand(pdb.replace('pdb','pdb.mol2'))
     
         #print (f"2.1 PP_Distance: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
         # Protein-protein distance
@@ -2558,7 +2559,7 @@ def main():
         feat[2] = calcula_RT(protein_ligand)
         #print (feat[2])
         #print (f"Calculating scores")
-        aux,key_ = result_score_calc(pdb,pdb.replace('pdb','mol2'),feat,seqaa,hydrogen_B,aa_table)
+        aux,key_ = result_score_calc(pdb,pdb.replace('pdb','pdb.mol2'),feat,seqaa,hydrogen_B,aa_table)
 
         #print (f"Saving results")
         finaloutput.write(f"{pdb}\t" + '\t'.join(map(str, aux)) + '\n')

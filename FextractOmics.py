@@ -10,13 +10,6 @@ def open_protein(pdb_file,table):
         seqaux = []
         seq = ''
         res = {}
-        table = {
-            'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C',
-            'GLU': 'E', 'GLN': 'Q', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
-            'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P',
-            'SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
-            'PYL': 'O', 'SEC': 'U','GLX':'Z','XAA':'X','ASX':'B'
-        }
 
         for line in file:
             if line.startswith('ATOM'):
@@ -2007,7 +2000,8 @@ def limit():
             if ch_l[line_l_count].startswith('S'):
                 MAX = MAX_S - liged  # cout << endl << "S" << endl;
         except:
-            print ( f"l_liged_list: {len(l_liged_list)} ch_l: {len(ch_l)}" )
+            continue
+            #print ( f"l_liged_list: {len(l_liged_list)} ch_l: {len(ch_l)}" )
             
         for l in limit_type:
             atom = l.strip()
@@ -2493,7 +2487,7 @@ def main():
     table = {
             'ALA': 'A', 'ARG': 'R', 'ASN': 'N', 'ASP': 'D', 'CYS': 'C','GLU': 'E', 'GLN': 'Q', 'GLY': 'G', 'HIS': 'H', 'ILE': 'I',
             'LEU': 'L', 'LYS': 'K', 'MET': 'M', 'PHE': 'F', 'PRO': 'P','SER': 'S', 'THR': 'T', 'TRP': 'W', 'TYR': 'Y', 'VAL': 'V',
-            'PYL': 'O', 'SEC': 'U','GLX':'Z','XAA':'X','ASX':'B','MSE':'J'}
+            'PYL': 'O', 'SEC': 'U','GLX':'Z','XAA':'X','ASX':'B','MSE':'J','UNK':'>'}
 
     aa_table = {}
 
@@ -2517,58 +2511,60 @@ def main():
     finaloutput = open("1_Reults.interaction_terms.csv","w")
     finaloutput.write(f"pdb\t"+'\t'.join(key_))
     finaloutput.write('\n')
-    
+    i = 1
     for pdb in pdbfiles:
-        print (f"Processing {pdb}")
         # 1) processa entreadas
         # [JC] Open PDF file
         atoms,seqaa = open_protein(pdb,table)
-
-        protein_ligand,protein_bond,protein_tripos = open_protein_ligand(pdb.replace('pdb','pdb.mol2'))
+        if '>' not in seqaa:
+            print (f"{i}) Processing {pdb}")
+            protein_ligand,protein_bond,protein_tripos = open_protein_ligand(pdb.replace('pdb','pdb.mol2'))
+        
+            #print (f"2.1 PP_Distance: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
+            # Protein-protein distance
+            file1,feat = PP_Distance(atoms,protein_ligand)
+            raiz_proteina(file1,atoms)
+            
+            # "Utiliza a sessao bonds do mol2 e o L_DIST.tmp (PL_DIST.tmp) pra extrair as raizes de apenas atomos que estao listados no PL_DIST.tmp
+            raiz_ligante(protein_bond,protein_tripos)
+        
+            #print (f"2 Calculos")
+            #print (f"2.1 P_centro_geom: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
+            P_centro_geom()
+            
+            #input eh o L_ROOT_0.tmp gerado pelo raiz_ligante, e vai gerar L_ROOT.tmp
+            L_centro_geom()
+            
+            #print (f"input dos angulos: outputs dos P/L_centro_geom()")
+            hydrogen_B = angulos()
+            
+            """
+            # 3) Saida
+            ---> remove ---> salva_ligante() #####
+            """
+            saida_PDB(atoms) 
+            salva_proteina()
+            
+            #print (f"4) refinamento do HB")
+            #result_score_calc
+            if hydrogen_B != 0:
+                limit()
+            
+            feat[2] = calcula_RT(protein_ligand)
+            #print (feat[2])
+            #print (f"Calculating scores")
+            aux,key_ = result_score_calc(pdb,pdb.replace('pdb','pdb.mol2'),feat,seqaa,hydrogen_B,aa_table)
     
-        #print (f"2.1 PP_Distance: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
-        # Protein-protein distance
-        file1,feat = PP_Distance(atoms,protein_ligand)
-        raiz_proteina(file1,atoms)
-        
-        # "Utiliza a sessao bonds do mol2 e o L_DIST.tmp (PL_DIST.tmp) pra extrair as raizes de apenas atomos que estao listados no PL_DIST.tmp
-        raiz_ligante(protein_bond,protein_tripos)
+            #print (f"Saving results")
+            finaloutput.write(f"{pdb}\t" + '\t'.join(map(str, aux)) + '\n')
     
-        #print (f"2 Calculos")
-        #print (f"2.1 P_centro_geom: [JC] Hydrophobic contacts (HCs) / van der Waals interactions (VDWs) / Repulsive interactions (RIs)")
-        P_centro_geom()
+            #print (f"Removing temp files")
+            deleta_temp()
+            
+            #import time
+            #time.sleep(0.1)
+            i+=1
         
-        #input eh o L_ROOT_0.tmp gerado pelo raiz_ligante, e vai gerar L_ROOT.tmp
-        L_centro_geom()
-        
-        #print (f"input dos angulos: outputs dos P/L_centro_geom()")
-        hydrogen_B = angulos()
-        
-        """
-        # 3) Saida
-        ---> remove ---> salva_ligante() #####
-        """
-        saida_PDB(atoms) 
-        salva_proteina()
-        
-        #print (f"4) refinamento do HB")
-        #result_score_calc
-        if hydrogen_B != 0:
-            limit()
-        
-        feat[2] = calcula_RT(protein_ligand)
-        #print (feat[2])
-        #print (f"Calculating scores")
-        aux,key_ = result_score_calc(pdb,pdb.replace('pdb','pdb.mol2'),feat,seqaa,hydrogen_B,aa_table)
-
-        #print (f"Saving results")
-        finaloutput.write(f"{pdb}\t" + '\t'.join(map(str, aux)) + '\n')
-
-        #print (f"Removing temp files")
-        deleta_temp()
-        
-        import time
-        time.sleep(0.3)
     finaloutput.close()
     
     """

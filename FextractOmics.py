@@ -2248,7 +2248,17 @@ def calculate_proportion(seq):
     mapVolume = {}
     mapMass = {}
     mapHydro = {}
-    
+    # https://www.imgt.org/IMGTeducation/Aide-memoire/_UK/aminoacids/IMGTclasses.html#table
+    # https://www.imgt.org/IMGTeducation/Aide-memoire/_UK/aminoacids/abbreviation.html
+    # https://folding.cchmc.org/online/am_acids/am_acids.html
+    #References:
+    #[1]	Zamyatnin, A.A., Protein volume in solution, Prog. Biophys. Mol. Biol., 24:107-123 (1972), PMID: 4566650.
+    #[2]	Kyte, J. and Doolittle, R.F., J. Mol. Biol., 157:105-132 (1982).
+    #[3]	Cohn, E.J. and Edsall, J.T., In: Proteins, amino acids and peptides. Rheinhold Publishing Corporation, New York., pp. 155-176 and pp.370-381 (1943).
+    #[4]	Perkins, S.J., Protein volumes and hydration effects. The calculations of partial specific volumes, neutron scattering matchpoints and 280-nm absorption coefficients for proteins and glycoproteins from amino acid sequences. Eur. J. Biochem., 157:169-80 (1986), PMID: 3709531.
+    #[5]	Wetlaufer, D.B., Adv. Prot. Chem., 17:303-390 (1962).
+    #[6]	Engelman, D.M., Steitz, T.A. and Goldman A., Annu. Rev. Biophys. Biophys. Chem., 15:321-353 (1986), PMID: 3521657.
+    #[7]	Zviling, M., Leonov, H. and Arkin, I.T., Bioinformatics, 21(11):2651-2656 (2005), PMID: 15797910.
     mapVolume['A'] = 88.6
     mapVolume['R'] = 173.4
     mapVolume['N'] = 114.1
